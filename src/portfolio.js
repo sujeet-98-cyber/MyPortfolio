@@ -26,7 +26,7 @@ const greeting = {
     "With over 3 years of experience as an AWS/DevOps Engineer, I specialize in automating, building, deploying, managing, and releasing code across various environments. I ensure robust Continuous Integration, Continuous Delivery, and Continuous Deployment processes across multiple environments, including DEV, TEST, STAGE, and PROD. "
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1aY8P8pm80pHJG_wJe8UefDtnHkae-VCr/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1ClOE8hPuTIiJ2MI2lF5YWFEvAevRAsmi/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -238,19 +238,7 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
-    {
-      title: "Microsoft",
-      subtitle:
-        "Azure Administrator Associate",
-      image: require("./assets/images/CertificationAzureAdministratorAssociate.jpg"),
-      footerLink: [
-        {
-          name: "View Certification",
-          url: "https://drive.google.com/file/d/1NAEkBjA7QZZzK0EI90-5ZYVZGhUgYedG/view?usp=drive_link"
-        }
-
-      ]
-    },
+    
     {
       title: "Microsoft",
       subtitle:
@@ -267,12 +255,28 @@ const achievementSection = {
     {
       title: "AWS",
       subtitle: "Solutions Architect",
-      image: require("./assets/images/CertificationAzureFundamentals.jpg"),
+      image: require("./assets/images/AWSCertifiedSolutionsArchitectAssociate.jpg"),
       footerLink: [
-        { name: "View Certification", url: "https://drive.google.com/file/d/1T1SbRfNF243i_2GmWbBe-D3BgbqOaNm8/view?usp=drive_link" },
+        { name: "View Certification", 
+          url: "https://drive.google.com/file/d/1aIau5KyPgH7p6Xr7_QcDjMirxLHunlVi/view?usp=drive_link" 
+        },
 
       ]
-    }
+    },
+
+    {
+      title: "Microsoft",
+      subtitle:
+        "Azure Administrator Associate",
+      image: require("./assets/images/CertificationAzureAdministratorAssociate.jpg"),
+      footerLink: [
+        {
+          name: "View Certification",
+          url: "https://drive.google.com/file/d/1NAEkBjA7QZZzK0EI90-5ZYVZGhUgYedG/view?usp=drive_link"
+        }
+
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
