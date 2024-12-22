@@ -26,7 +26,7 @@ const greeting = {
     "With over 3 years of experience as an AWS/DevOps Engineer, I specialize in automating, building, deploying, managing, and releasing code across various environments. I ensure robust Continuous Integration, Continuous Delivery, and Continuous Deployment processes across multiple environments, including DEV, TEST, STAGE, and PROD. "
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ClOE8hPuTIiJ2MI2lF5YWFEvAevRAsmi/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1Za-hEY_7t_a63iADopID1M0MIpu7lbnu/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -35,7 +35,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/akash08-ak",
   linkedin: "https://www.linkedin.com/in/akash-shewale-070b95152/",
-  gmail: "akashshewale0801@gmail.com",
+  gmail: "akashshewale0802@gmail.com",
   hackerrank: "https://www.hackerrank.com/akashshewale0801",
   instagram: "https://www.instagram.com/_aakash__ak_?igsh=dHFsMjhjdWZoY2Fq",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -125,7 +125,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Savitribai Phule Pune University",
-      logo: require("./assets/images/SppuLogo.jpg"),
+      logo: require("./assets/images/SppuLogo.png"),
       subHeader: "Bachelor of Engineering in Computer Engineering",
       duration: "September 2018 - August 2021",
 
@@ -177,23 +177,15 @@ const workExperiences = {
     {
       role: "Associate Software Engineer",
       company: "Cognizant",
-      companylogo: require("./assets/images/CognizantLogo.jpg"),
+      companylogo: require("./assets/images/Cognizant.jpg"),
       date: "Sep 2021 – Present",
-      desc: [
-        emoji("⚡Created and managed multiple VPCs and subnets, distributing them across availability zones based on requirements."),
-        emoji("⚡Proficient in AWS services including EC2, EBS, S3, ELB, Auto Scaling, VPC, IAM, EKS, RDS, CloudWatch, CloudFormation, and AWS CLI."),
-        emoji("⚡Gained hands-on experience with Git (GitHub and Bitbucket) for version control, including installation and configuration."),
-        emoji("⚡Integrated SonarQube into CI/CD pipelines to automatically perform code quality checks during build, test, and deployment stages."),
-        emoji("⚡Set up and configure Nexus repositories to store build artifacts, dependencies, and third-party libraries, ensuring secure and reliable storage."),
-        emoji("⚡Installed and configured Jenkins, creating CI/CD automation pipelines."),
-        emoji("⚡Configured Docker containers and Docker files, and managed Docker components like Docker Engine, images, and containers."),
-        emoji("⚡Wrote Ansible playbooks and created roles for automation tasks."),
-        emoji("⚡Managed Docker orchestration using Kubernetes, implementing and administering clusters."),
-        emoji("⚡Implemented Disaster Recovery (DR) solutions for production servers using AWS Storage Gateway."),
-        emoji("⚡Configured development, QA, and production environments and automated infrastructure with Terraform."),
-        emoji("⚡Used CloudWatch to monitor server services, including logs, CPU, RAM, and storage."),
-        emoji("⚡Created custom AMIs and handled code branching, tagging, and merging during release cycles.")
-    
+      descBullets: [
+        "⚡Proficient in creating secure and scalable infrastructure. ",
+        "⚡Experienced in setting up and automating CI/CD pipelines.",
+        "⚡Integrated code quality and security checks into deployment processes. ",
+        "⚡Skilled in managing containerized applications and orchestration.",
+        "⚡Configured artifact storage for streamlined access and management. ",
+        "⚡Deployed applications for reliable and scalable performance."
       ],
     }
   ]
@@ -214,16 +206,15 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/KotakLifeInsurance.png"),
-      projectName: "Kotak Life Insurance",
-      projectDesc: "Kotak Life Insurance, a subsidiary of Kotak Mahindra Bank, is one of India's leading life insurance companies. Established in 2001, the company offers a wide range of life insurance products, including term plans, savings and investment plans, child plans, retirement plans, and health insurance plans."
+      image: require("./assets/images/Cog_Project.png"),
+      projectName: "Cognizant Internal Apps",
+      projectDesc: "Azure CI/CD Automation: Experienced in setting up and configuring Azure Pipelines to automate CI/CD processes, ensuring efficient build and deployment workflows. Security Integration: Integrated SAST, DAST, and OSS scans into Azure Pipelines to enhance application security and perform comprehensive vulnerability assessments. Artifact and Configuration Management: Stored build artifacts on servers using different agents and set up shared paths to manage pipeline-related XML files, ensuring seamless accessibility and organization. Azure Deployments: Deployed applications on Azure servers, ensuring reliability, scalability, and performance optimization."
       
     },
     {
-      image: require("./assets/images/CygnusHomeService.jpg"),
+      image: require("./assets/images/Cyguns.png"),
       projectName: "Cygnus Home Service, LLC",
-      projectDesc: "Cygnus is a third-party e-commerce fulfillment program that's part of Yelloh's Home Service, the largest direct-to-consumer frozen fulfillment network in the US. Cygnus's mission is to help frozen food companies take advantage of e-commerce opportunities by offering a nationwide ground shipping network that can deliver in one to two days. Cygnus has 10 fulfillment centers that can reach the entire US within two days, and can deliver in one day to more than 70% of major metro areas."
-      
+      projectDesc: "AWS Expertise: Proficient in AWS services, including creating custom AMIs for streamlined deployments, managing IAM for secure access control, and configuring VPCs for robust and secure networking. CI/CD Implementation: Experienced in setting up and configuring Jenkins to build and manage CI/CD pipelines, ensuring seamless code integration and deployment. Code Quality Management: Integrated SonarQube into CI/CD pipelines to automate code quality checks, enhancing security and reducing technical debt. Containerization and Orchestration: Skilled in managing Docker containers and deploying them at scale using Kubernetes clusters for high availability and efficiency."
     }
   ],
   display: true // Set false to hide this section, defaults to true
