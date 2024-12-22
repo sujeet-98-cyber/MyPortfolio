@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/workflows
 /.pnp
 .pnp.js
 
