@@ -23,7 +23,7 @@ const greeting = {
   username: "Aakash Shewale",
   title: "Hi all, I'm Aakash",
   subTitle: emoji(
-    "With over 3 years of experience as an AWS/DevOps Engineer, I specialize in automating, building, deploying, managing, and releasing code across various environments. I ensure robust Continuous Integration, Continuous Delivery, and Continuous Deployment processes across multiple environments, including DEV, TEST, STAGE, and PROD. "
+    "DevOps Engineer with 3+ years of experience in automating, deploying, and managing code across multiple environments, ensuring seamless CI/CD processes for DEV, STAGE, and PROD."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1Za-hEY_7t_a63iADopID1M0MIpu7lbnu/view?usp=drive_link", // Set to empty to hide the button
@@ -37,7 +37,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/akash-shewale-070b95152/",
   gmail: "akashshewale0802@gmail.com",
   hackerrank: "https://www.hackerrank.com/akashshewale0801",
-  instagram: "https://www.instagram.com/_aakash__ak_?igsh=dHFsMjhjdWZoY2Fq",
+  instagram: "https://www.instagram.com/_akash__0801_/profilecard/?igsh=dHFsMjhjdWZoY2Fq",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -208,17 +208,27 @@ const bigProjects = {
     {
       image: require("./assets/images/Cog_Project.png"),
       projectName: "Cognizant Internal Apps",
-      projectDesc: "Azure CI/CD Automation: Experienced in setting up and configuring Azure Pipelines to automate CI/CD processes, ensuring efficient build and deployment workflows. Security Integration: Integrated SAST, DAST, and OSS scans into Azure Pipelines to enhance application security and perform comprehensive vulnerability assessments. Artifact and Configuration Management: Stored build artifacts on servers using different agents and set up shared paths to manage pipeline-related XML files, ensuring seamless accessibility and organization. Azure Deployments: Deployed applications on Azure servers, ensuring reliability, scalability, and performance optimization."
-      
+      projectDesc: [
+        "⚡Azure CI/CD Automation: Experienced in setting up and configuring Azure Pipelines to automate CI/CD processes, ensuring efficient build and deployment workflows.",
+        "⚡Security Integration: Integrated SAST, DAST, and OSS scans into Azure Pipelines to enhance application security and perform comprehensive vulnerability assessments.",
+        "⚡Artifact and Configuration Management: Stored build artifacts on servers using different agents and set up shared paths to manage pipeline-related XML files, ensuring seamless accessibility and organization.",
+        "⚡Azure Deployments: Deployed applications on Azure servers, ensuring reliability, scalability, and performance optimization."
+      ]
     },
     {
       image: require("./assets/images/Cyguns.png"),
       projectName: "Cygnus Home Service, LLC",
-      projectDesc: "AWS Expertise: Proficient in AWS services, including creating custom AMIs for streamlined deployments, managing IAM for secure access control, and configuring VPCs for robust and secure networking. CI/CD Implementation: Experienced in setting up and configuring Jenkins to build and manage CI/CD pipelines, ensuring seamless code integration and deployment. Code Quality Management: Integrated SonarQube into CI/CD pipelines to automate code quality checks, enhancing security and reducing technical debt. Containerization and Orchestration: Skilled in managing Docker containers and deploying them at scale using Kubernetes clusters for high availability and efficiency."
+      projectDesc: [
+        "⚡AWS Expertise: Proficient in AWS services, including creating custom AMIs for streamlined deployments, managing IAM for secure access control, and configuring VPCs for robust and secure networking.",
+        "⚡CI/CD Implementation: Experienced in setting up and configuring Jenkins to build and manage CI/CD pipelines, ensuring seamless code integration and deployment.",
+        "⚡Code Quality Management: Integrated SonarQube into CI/CD pipelines to automate code quality checks, enhancing security and reducing technical debt.",
+        "⚡Containerization and Orchestration: Skilled in managing Docker containers and deploying them at scale using Kubernetes clusters for high availability and efficiency."
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
@@ -234,7 +244,7 @@ const achievementSection = {
       title: "Microsoft",
       subtitle:
         "Azure Solutions Architect",
-      image: require("./assets/images/CertificationAzureSolutionsArchitectExpert.jpg"),
+      image: require("./assets/images/CertificationAzureSolutionsArchitectExpert.png"),
       footerLink: [
         {
           name: "View Certification",
@@ -246,7 +256,7 @@ const achievementSection = {
     {
       title: "AWS",
       subtitle: "Solutions Architect",
-      image: require("./assets/images/AWSCertifiedSolutionsArchitectAssociate.jpg"),
+      image: require("./assets/images/AWSCertifiedSolutionsArchitectAssociate.png"),
       footerLink: [
         { name: "View Certification", 
           url: "https://drive.google.com/file/d/1aIau5KyPgH7p6Xr7_QcDjMirxLHunlVi/view?usp=drive_link" 
@@ -259,7 +269,7 @@ const achievementSection = {
       title: "Microsoft",
       subtitle:
         "Azure Administrator Associate",
-      image: require("./assets/images/CertificationAzureAdministratorAssociate.jpg"),
+      image: require("./assets/images/CertificationAzureAdministratorAssociate.png"),
       footerLink: [
         {
           name: "View Certification",
