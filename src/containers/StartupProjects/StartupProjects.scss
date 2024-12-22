@@ -12,7 +12,7 @@
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
-  text-align: center;  /* Center the project name */
+  text-align: center; /* Center the project name */
 }
 
 .card-subtitle {
@@ -46,8 +46,8 @@
 }
 
 .project-detail {
-  text-align: left;  /* Align text to the left */
-  margin-top: 10px;  /* Add some spacing for better readability */
+  text-align: left; /* Align text to the left */
+  margin-top: 10px; /* Add some spacing for better readability */
 }
 
 .project-card-light:hover {
@@ -93,12 +93,12 @@
 
 /* Remove bullets from the list in project description */
 .project-detail ul {
-  list-style-type: none;  /* Remove bullet points */
-  padding-left: 0;  /* Remove left padding */
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove left padding */
 }
 
 .project-detail ul li {
-  margin: 0.5rem 0;  /* Add margin for spacing between items */
+  margin: 0.5rem 0; /* Add margin for spacing between items */
 }
 
 @media (max-width: 768px) {

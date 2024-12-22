@@ -37,7 +37,8 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/akash-shewale-070b95152/",
   gmail: "akashshewale0802@gmail.com",
   hackerrank: "https://www.hackerrank.com/akashshewale0801",
-  instagram: "https://www.instagram.com/_akash__0801_/profilecard/?igsh=dHFsMjhjdWZoY2Fq",
+  instagram:
+    "https://www.instagram.com/_akash__0801_/profilecard/?igsh=dHFsMjhjdWZoY2Fq",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -54,8 +55,6 @@ const skillsSection = {
     emoji("⚡Orchestrate and Administer Containers."),
     emoji("⚡Automate Infrastructure and Configuration Management."),
     emoji("⚡Enhance Cloud Monitoring and Disaster Recovery.")
-
-
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -64,56 +63,56 @@ https://icon-sets.iconify.design/devicon/?query=az */
   softwareSkills: [
     {
       skillName: "Linux",
-      fontAwesomeClassname: "devicon:linux",
+      fontAwesomeClassname: "devicon:linux"
     },
     {
       skillName: "AWS",
-      fontAwesomeClassname: "devicon:amazonwebservices-wordmark",
+      fontAwesomeClassname: "devicon:amazonwebservices-wordmark"
     },
     {
       skillName: "Azure",
-      fontAwesomeClassname: "devicon:azure",
+      fontAwesomeClassname: "devicon:azure"
     },
     {
       skillName: "Nexus",
-      fontAwesomeClassname: "mdi:hexagon-outline",
+      fontAwesomeClassname: "mdi:hexagon-outline"
     },
     {
       skillName: "Sonar Qube",
-      fontAwesomeClassname: "devicon:sonarqube-wordmark",
+      fontAwesomeClassname: "devicon:sonarqube-wordmark"
     },
     {
       skillName: "Shell Scripting",
-      fontAwesomeClassname: "devicon:powershell",
+      fontAwesomeClassname: "devicon:powershell"
     },
     {
       skillName: "Git",
-      fontAwesomeClassname: "devicon:git",
+      fontAwesomeClassname: "devicon:git"
     },
     {
       skillName: "Git Hub",
-      fontAwesomeClassname: "devicon:github",
+      fontAwesomeClassname: "devicon:github"
     },
     {
       skillName: "Jenkins",
-      fontAwesomeClassname: "devicon:jenkins",
+      fontAwesomeClassname: "devicon:jenkins"
     },
     {
       skillName: "Ansible",
-      fontAwesomeClassname: "devicon:ansible",
+      fontAwesomeClassname: "devicon:ansible"
     },
     {
       skillName: "Docker",
-      fontAwesomeClassname: "devicon:docker",
+      fontAwesomeClassname: "devicon:docker"
     },
     {
       skillName: "Terraform",
-      fontAwesomeClassname: "devicon:terraform",
+      fontAwesomeClassname: "devicon:terraform"
     },
     {
       skillName: "Kubernetes",
-      fontAwesomeClassname: "devicon:kubernetes",
-    },
+      fontAwesomeClassname: "devicon:kubernetes"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -127,23 +126,19 @@ const educationInfo = {
       schoolName: "Savitribai Phule Pune University",
       logo: require("./assets/images/SppuLogo.png"),
       subHeader: "Bachelor of Engineering in Computer Engineering",
-      duration: "September 2018 - August 2021",
-
-
+      duration: "September 2018 - August 2021"
     },
     {
       schoolName: "Maharashtra State Board of Technical Education",
       logo: require("./assets/images/MsbteLogo.png"),
       subHeader: "Diploma in Computer Engineering",
-      duration: "May 2015 - June 2018",
-
+      duration: "May 2015 - June 2018"
     },
     {
       schoolName: "Ravindranath Vidyalaya",
       logo: require("./assets/images/RavindranathLogo.jpeg"),
       subHeader: "Secondary School Certificate",
-      duration: "June 2014 - March 2015",
-
+      duration: "June 2014 - March 2015"
     }
   ]
 };
@@ -186,7 +181,7 @@ const workExperiences = {
         "⚡Skilled in managing containerized applications and orchestration.",
         "⚡Configured artifact storage for streamlined access and management. ",
         "⚡Deployed applications for reliable and scalable performance."
-      ],
+      ]
     }
   ]
 };
@@ -229,7 +224,6 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
-
 // Achievement Section
 // Include certificates, talks etc
 
@@ -239,11 +233,9 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
-    
     {
       title: "Microsoft",
-      subtitle:
-        "Azure Solutions Architect",
+      subtitle: "Azure Solutions Architect",
       image: require("./assets/images/CertificationAzureSolutionsArchitectExpert.png"),
       footerLink: [
         {
@@ -258,26 +250,24 @@ const achievementSection = {
       subtitle: "Solutions Architect",
       image: require("./assets/images/AWSCertifiedSolutionsArchitectAssociate.png"),
       footerLink: [
-        { name: "View Certification", 
-          url: "https://drive.google.com/file/d/1aIau5KyPgH7p6Xr7_QcDjMirxLHunlVi/view?usp=drive_link" 
-        },
-
+        {
+          name: "View Certification",
+          url: "https://drive.google.com/file/d/1aIau5KyPgH7p6Xr7_QcDjMirxLHunlVi/view?usp=drive_link"
+        }
       ]
     },
 
     {
       title: "Microsoft",
-      subtitle:
-        "Azure Administrator Associate",
+      subtitle: "Azure Administrator Associate",
       image: require("./assets/images/CertificationAzureAdministratorAssociate.png"),
       footerLink: [
         {
           name: "View Certification",
           url: "https://drive.google.com/file/d/1NAEkBjA7QZZzK0EI90-5ZYVZGhUgYedG/view?usp=drive_link"
         }
-
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -340,7 +330,9 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: emoji("Discuss a project or just want to say hi 👋. My Inbox is open for all."),
+  subtitle: emoji(
+    "Discuss a project or just want to say hi 👋. My Inbox is open for all."
+  ),
   number: "+92-8862003531",
   email_address: "akashshewale0802@gmail.com"
 };

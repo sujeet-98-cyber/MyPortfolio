@@ -67,7 +67,7 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
-      
+
       {socialMediaLinks.hackerrank ? (
         <a
           href={socialMediaLinks.hackerrank}

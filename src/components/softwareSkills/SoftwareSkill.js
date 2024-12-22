@@ -15,11 +15,11 @@ export default function SoftwareSkill() {
                 name={skills.skillName}
               >
                 <span
-                      className="iconify"
-                      data-icon={skills.fontAwesomeClassname}
-                      style={skills.style}
-                    ></span>
-                    <p>{skills.skillName}</p>
+                  className="iconify"
+                  data-icon={skills.fontAwesomeClassname}
+                  style={skills.style}
+                ></span>
+                <p>{skills.skillName}</p>
               </li>
             );
           })}
