@@ -28,7 +28,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
-    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
+    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\"",
+    "zip-build": "zip -r build.zip build/",
+    "upload-to-nexus": "npm run zip-build && curl -v -u admin:admin --upload-file ./build.zip http://13.232.125.59:8081/repository/reactjs-artifacts/com/example/developerfolio/0.1.0/developerfolio-0.1.0.zip"
   },
   "eslintConfig": {
     "extends": "react-app"
