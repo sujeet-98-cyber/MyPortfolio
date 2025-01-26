@@ -1,27 +1,27 @@
-# Use official Node.js runtime (version 20.x) as a parent image
-FROM node:20.18.2-alpine
+# Step 1: Use an official Node.js v20.18.2 image as the base image
+FROM node:20.18.2 as build
 
-# Set the working directory to ./app
+# Step 2: Set the working directory
 WORKDIR /app
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package.json ./
-
-RUN apk add --no-cache git
-
-# Install any needed packages
+# Step 3: Copy the package.json and install dependencies
+COPY package.json package-lock.json ./
 RUN npm install
 
-# Audit fix npm packages
-RUN npm audit fix
+# Step 4: Copy the entire source code to the container
+COPY . .
 
-# Bundle app source
-COPY . /app
+# Step 5: Build the React app (or your front-end)
+RUN npm run build
 
-# Make port 3000 available to the world outside this container
-EXPOSE 3000
+# Step 6: Serve the app using a lightweight web server (e.g., Nginx)
+FROM nginx:alpine
 
-# Run app.js when the container launches
-CMD ["npm", "start"]
+# Step 7: Copy the build files from the previous stage to the Nginx directory
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Step 8: Expose the port that Nginx is running on
+EXPOSE 80
+
+# Step 9: Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
