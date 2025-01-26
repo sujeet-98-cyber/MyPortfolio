@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Aakash Shewale",
+  username: "Karan Kathe",
   title: "Hi all, I'm Aakash",
   subTitle: emoji(
     "DevOps Engineer with 3+ years of experience in automating, deploying, and managing code across multiple environments, ensuring seamless CI/CD processes for DEV, STAGE, and PROD."
