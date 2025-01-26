@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myportfolio
-          image: "docker.io/akashshewale0801/myportfolio:latest" # Replace with your image name
+          image: "docker.io/akashshewale0801/myportfolio:0.1.1" # Replace with your image name
           ports:
             - containerPort: 80
 
