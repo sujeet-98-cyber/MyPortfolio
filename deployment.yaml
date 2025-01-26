@@ -13,13 +13,12 @@ spec:
         app: myportfolio
     spec:
       containers:
-      - name: myportfolio
-        image: akashshewale0801/myportfolio:latest  # Using latest tag
-        ports:
-        - containerPort: 3000
+        - name: myportfolio
+          image: "docker.io/akashshewale0801/myportfolio:latest" # Replace with your image name
+          ports:
+            - containerPort: 80
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -28,7 +27,7 @@ spec:
   selector:
     app: myportfolio
   ports:
-    - protocol: "TCP"
+    - protocol: TCP
       port: 80
-      targetPort: 3000
+      targetPort: 80
   type: LoadBalancer
