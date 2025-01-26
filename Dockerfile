@@ -1,7 +1,5 @@
-# This file is the main docker file configurations
-
-# Official Node JS runtime as a parent image
-FROM node:10.16.0-alpine
+# Use official Node.js runtime (version 20.x) as a parent image
+FROM node:20.18.2-alpine
 
 # Set the working directory to ./app
 WORKDIR /app
