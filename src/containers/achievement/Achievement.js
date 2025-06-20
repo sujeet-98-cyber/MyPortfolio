@@ -24,20 +24,8 @@ export default function Achievement() {
               }
             >
               {achievementSection.title}{" "}
-              <span
-                style={{
-                  width: "120px",
-                  height: "120px",
-                  display: "inline-block",
-                  marginLeft: "8px",
-                  verticalAlign: "middle"
-                }}
-              >
-                <DisplayLottie
-                  animationData={AchievementsAnimation}
-                  height="22px"
-                  width="22px"
-                />
+              <span className="achievement-lottie-container">
+                <DisplayLottie animationData={AchievementsAnimation} />
               </span>
             </h1>
             <p

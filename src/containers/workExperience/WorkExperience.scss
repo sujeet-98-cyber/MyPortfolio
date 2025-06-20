@@ -50,3 +50,19 @@
     transform: scaleY(0.8) rotateX(10deg);
   }
 }
+.experience-lottie-container {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+  }
+}

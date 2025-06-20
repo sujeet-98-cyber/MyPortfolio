@@ -34,21 +34,8 @@ export default function Skills() {
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
               {skillsSection.title}
-              <span
-                style={{
-                  width: "100px",
-                  height: "100px",
-                  display: "inline-block",
-                  marginLeft: "8px",
-                  verticalAlign: "text-bottom",
-                  overflow: "hidden"
-                }}
-              >
-                <DisplayLottie
-                  animationData={WhatIDoAnimation}
-                  height="22px"
-                  width="22px"
-                />
+              <span className="what-i-do-lottie-container">
+                <DisplayLottie animationData={WhatIDoAnimation} />
               </span>
             </h1>
             <p

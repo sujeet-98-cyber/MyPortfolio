@@ -20,12 +20,8 @@ export default function WorkExperience() {
                 style={{display: "flex", alignItems: "center", gap: "10px"}}
               >
                 {workExperiences.title}
-                <span style={{width: "100px", height: "100px"}}>
-                  <DisplayLottie
-                    animationData={ExperienceAnimation}
-                    height="40px"
-                    width="40px"
-                  />
+                <span className="experience-lottie-container">
+                  <DisplayLottie animationData={ExperienceAnimation} />
                 </span>
               </h1>
 

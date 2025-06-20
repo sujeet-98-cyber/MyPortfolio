@@ -28,21 +28,10 @@ export default function StartupProject() {
         <div>
           <h1 className="skills-heading">
             {bigProjects.title}
-            <span
-              style={{
-                width: "100px",
-                height: "100px",
-                display: "inline-block",
-                marginLeft: "8px",
-                verticalAlign: "middle"
-              }}
-            >
-              <DisplayLottie
-                animationData={ProjectsAnimation}
-                height="2px"
-                width="22px"
-              />
-            </span>
+            <span className="projects-lottie-container">
+  <DisplayLottie animationData={ProjectsAnimation} />
+</span>
+
           </h1>
 
           <p

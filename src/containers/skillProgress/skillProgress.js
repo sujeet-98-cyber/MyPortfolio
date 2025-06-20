@@ -17,12 +17,8 @@ export default function StackProgress() {
               style={{display: "flex", alignItems: "center", gap: "10px"}}
             >
               {techStack.title}
-              <span style={{width: "100px", height: "100px"}}>
-                <DisplayLottie
-                  animationData={ProficiencyAnimation}
-                  height="24px"
-                  width="24px"
-                />
+              <span className="proficiency-lottie-container">
+                <DisplayLottie animationData={ProficiencyAnimation} />
               </span>
             </h1>
 

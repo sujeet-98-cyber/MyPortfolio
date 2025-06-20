@@ -20,12 +20,8 @@ export default function Contact() {
               style={{display: "flex", alignItems: "center", gap: "8px"}}
             >
               {contactInfo.title}
-              <span style={{width: "120px", height: "120px"}}>
-                <DisplayLottie
-                  animationData={phoneAnimation}
-                  height="24px"
-                  width="24px"
-                />
+              <span className="phone-lottie-container">
+                <DisplayLottie animationData={phoneAnimation} />
               </span>
             </h1>
             <p

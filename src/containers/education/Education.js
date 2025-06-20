@@ -14,12 +14,8 @@ export default function Education() {
           style={{display: "flex", alignItems: "center", gap: "10px"}}
         >
           {educationInfo.title}
-          <span style={{width: "100px", height: "100px"}}>
-            <DisplayLottie
-              animationData={EducationAnimation}
-              height="24px"
-              width="24px"
-            />
+          <span className="education-lottie-container">
+            <DisplayLottie animationData={EducationAnimation} />
           </span>
         </h1>
         <p className="experience-subtitle">{educationInfo.subtitle}</p>
