@@ -3,6 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import Cog_Project_1 from "./assets/images/Cog_Project_1.svg";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
@@ -229,7 +230,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/Cog_Project.png"),
+      image: Cog_Project_1,
       projectName: "Cognizant Internal Apps",
       projectDesc: [
         "⚡Azure CI/CD Automation: Experienced in setting up and configuring Azure Pipelines to automate CI/CD processes, ensuring efficient build and deployment workflows.",
