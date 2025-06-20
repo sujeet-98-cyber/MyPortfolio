@@ -6,6 +6,7 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import WhatIDoAnimation from "../../assets/lottie/WhatIDo.json";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
@@ -32,7 +33,23 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              {skillsSection.title}
+              <span
+                style={{
+                  width: "100px",
+                  height: "100px",
+                  display: "inline-block",
+                  marginLeft: "8px",
+                  verticalAlign: "text-bottom",
+                  overflow: "hidden"
+                }}
+              >
+                <DisplayLottie
+                  animationData={WhatIDoAnimation}
+                  height="22px"
+                  width="22px"
+                />
+              </span>
             </h1>
             <p
               className={

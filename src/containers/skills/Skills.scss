@@ -62,3 +62,13 @@
     order: 2;
   }
 }
+.emoji-bounce {
+  display: inline-block;
+  margin-left: 8px;
+  animation: bounce 1.2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

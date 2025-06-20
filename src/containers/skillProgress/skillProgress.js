@@ -4,6 +4,7 @@ import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
 import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import ProficiencyAnimation from "../../assets/lottie/Proficiency.json";
 
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
@@ -11,7 +12,21 @@ export default function StackProgress() {
       <Fade bottom duration={1000} distance="20px">
         <div className="skills-container">
           <div className="skills-bar">
-            <h1 className="skills-heading">Proficiency</h1>
+            <h1
+              className="skills-heading"
+              style={{display: "flex", alignItems: "center", gap: "10px"}}
+            >
+              {techStack.title}
+              <span style={{width: "100px", height: "100px"}}>
+                <DisplayLottie
+                  animationData={ProficiencyAnimation}
+                  height="24px"
+                  width="24px"
+                />
+              </span>
+            </h1>
+
+            <p className="experience-subtitle">{techStack.subtitle}</p>
             {techStack.experience.map((exp, i) => {
               const progressStyle = {
                 width: exp.progressPercentage

@@ -48,3 +48,17 @@
     font-size: 16px;
   }
 }
+.emoji-horizontal {
+  display: inline-block;
+  margin-left: 8px;
+  animation: horizontalMove 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes horizontalMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}

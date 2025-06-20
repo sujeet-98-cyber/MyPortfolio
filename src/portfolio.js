@@ -20,13 +20,13 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Karan Kathe",
+  username: "Akash Shewale",
   title: "Hi all, I'm Aakash",
   subTitle: emoji(
     "DevOps Engineer with 3+ years of experience in automating, deploying, and managing code across multiple environments, ensuring seamless CI/CD processes for DEV, STAGE, and PROD."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1Za-hEY_7t_a63iADopID1M0MIpu7lbnu/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1oZjsvxecfZzSaaLvVykd2NJ_vVC6I_tC/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -47,7 +47,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  emojiIcon: "🧠",
+  title: "What I Do",
   subTitle: "CRAZY DEVOPS ENGINEER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji("⚡Design and Manage Cloud Infrastructure."),
@@ -61,10 +62,17 @@ const skillsSection = {
 https://icon-sets.iconify.design/devicon/?query=az */
 
   softwareSkills: [
+    // OS & Scripting
     {
       skillName: "Linux",
       fontAwesomeClassname: "devicon:linux"
     },
+    {
+      skillName: "Shell Scripting",
+      fontAwesomeClassname: "devicon:powershell"
+    },
+
+    // Cloud Platforms
     {
       skillName: "AWS",
       fontAwesomeClassname: "devicon:amazonwebservices-wordmark"
@@ -73,54 +81,67 @@ https://icon-sets.iconify.design/devicon/?query=az */
       skillName: "Azure",
       fontAwesomeClassname: "devicon:azure"
     },
-    {
-      skillName: "Nexus",
-      fontAwesomeClassname: "mdi:hexagon-outline"
-    },
-    {
-      skillName: "Sonar Qube",
-      fontAwesomeClassname: "devicon:sonarqube-wordmark"
-    },
-    {
-      skillName: "Shell Scripting",
-      fontAwesomeClassname: "devicon:powershell"
-    },
+
+    // Version Control
     {
       skillName: "Git",
       fontAwesomeClassname: "devicon:git"
     },
     {
-      skillName: "Git Hub",
+      skillName: "GitHub",
       fontAwesomeClassname: "devicon:github"
     },
+
+    // CI/CD Tools
     {
       skillName: "Jenkins",
       fontAwesomeClassname: "devicon:jenkins"
     },
     {
+      skillName: "GitHub Actions",
+      fontAwesomeClassname: "simple-icons:githubactions"
+    },
+    {
+      skillName: "SonarQube",
+      fontAwesomeClassname: "devicon:sonarqube-wordmark"
+    },
+    {
+      skillName: "Nexus",
+      fontAwesomeClassname: "mdi:hexagon-outline"
+    },
+
+    // Configuration Management
+    {
       skillName: "Ansible",
       fontAwesomeClassname: "devicon:ansible"
     },
+
+    // Containerization & Orchestration
     {
       skillName: "Docker",
       fontAwesomeClassname: "devicon:docker"
     },
     {
-      skillName: "Terraform",
-      fontAwesomeClassname: "devicon:terraform"
-    },
-    {
       skillName: "Kubernetes",
       fontAwesomeClassname: "devicon:kubernetes"
+    },
+
+    // Infrastructure as Code (IaC)
+    {
+      skillName: "Terraform",
+      fontAwesomeClassname: "devicon:terraform"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
+  title: "Education",
+  emojiIcon: "🎓",
+  subtitle: "ACADEMIC JOURNEY AND QUALIFICATIONS",
   schools: [
     {
       schoolName: "Savitribai Phule Pune University",
@@ -146,11 +167,14 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  emojiIcon: "⚙️",
+  title: "Proficiency",
+  subtitle: "TOOLS AND TECHNOLOGIES I’M CONFIDENT WORKING WITH",
+  viewSkillBars: true, // Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "AWS", //Insert stack or technology you have experience in
-      progressPercentage: "85%" //Insert relative proficiency in percentage
+      Stack: "AWS",
+      progressPercentage: "85%"
     },
     {
       Stack: "Azure",
@@ -161,26 +185,29 @@ const techStack = {
       progressPercentage: "70%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false // Set true to display codersrank badges
 };
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Set it to true to show workExperiences Section
+  title: "Experiences",
+  emojiIcon: "💼",
+  subtitle: "ROLES AND CONTRIBUTIONS AT ORGANIZATIONS I'VE WORKED WITH",
   experience: [
     {
-      role: "Associate Software Engineer",
+      role: "Associate Cloud & DevOps Engineer",
       company: "Cognizant",
       companylogo: require("./assets/images/Cognizant.jpg"),
       date: "Sep 2021 – Present",
       descBullets: [
-        "⚡Proficient in creating secure and scalable infrastructure. ",
-        "⚡Experienced in setting up and automating CI/CD pipelines.",
-        "⚡Integrated code quality and security checks into deployment processes. ",
-        "⚡Skilled in managing containerized applications and orchestration.",
-        "⚡Configured artifact storage for streamlined access and management. ",
-        "⚡Deployed applications for reliable and scalable performance."
+        "⚡ Proficient in creating secure and scalable infrastructure.",
+        "⚡ Experienced in setting up and automating CI/CD pipelines.",
+        "⚡ Integrated code quality and security checks into deployment processes.",
+        "⚡ Skilled in managing containerized applications and orchestration.",
+        "⚡ Configured artifact storage for streamlined access and management.",
+        "⚡ Deployed applications for reliable and scalable performance."
       ]
     }
   ]
@@ -197,7 +224,8 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
+  title: "Projects ",
+  emojiIcon: "💻",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
@@ -228,7 +256,8 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: "Achievements And Certifications",
+  emojiIcon: "🏆",
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
@@ -240,7 +269,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certification",
-          url: "https://drive.google.com/file/d/1NsalRvcu_2FVgLwm2VGZBYYnJZdwZppS/view?usp=drive_link"
+          url: "https://drive.google.com/file/d/1FecuBfEBfsLV-522OyoLLrTdG7Vh8buk/view?usp=sharing"
         }
       ]
     },
@@ -252,7 +281,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certification",
-          url: "https://drive.google.com/file/d/1aIau5KyPgH7p6Xr7_QcDjMirxLHunlVi/view?usp=drive_link"
+          url: "https://drive.google.com/file/d/1828t_1v7OTOwCRYlQR9G_2xLgTMof7px/view?usp=sharing"
         }
       ]
     },
@@ -264,7 +293,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certification",
-          url: "https://drive.google.com/file/d/1NAEkBjA7QZZzK0EI90-5ZYVZGhUgYedG/view?usp=drive_link"
+          url: "https://drive.google.com/file/d/1RE4jIGwlVh2dctUxdHCkffNTNoaPNws0/view?usp=sharing"
         }
       ]
     }
@@ -329,9 +358,13 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle: emoji(
-    "Discuss a project or just want to say hi 👋. My Inbox is open for all."
+  title: "Contact Me ",
+  emojiIcon: "☎️",
+  subtitle: (
+    <>
+      Discuss a project or just want to say hi{" "}
+      <span className="wave-hand">👋</span>. My Inbox is open for all.
+    </>
   ),
   number: "+92-8862003531",
   email_address: "akashshewale0802@gmail.com"

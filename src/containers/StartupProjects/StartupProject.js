@@ -3,6 +3,8 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import ProjectsAnimation from "../../assets/lottie/Projects.json";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StartupProject() {
   // Function to open URL in a new tab
@@ -24,7 +26,25 @@ export default function StartupProject() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className="skills-heading">
+            {bigProjects.title}
+            <span
+              style={{
+                width: "100px",
+                height: "100px",
+                display: "inline-block",
+                marginLeft: "8px",
+                verticalAlign: "middle"
+              }}
+            >
+              <DisplayLottie
+                animationData={ProjectsAnimation}
+                height="2px"
+                width="22px"
+              />
+            </span>
+          </h1>
+
           <p
             className={
               isDark

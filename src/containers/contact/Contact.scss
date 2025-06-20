@@ -85,3 +85,34 @@
     display: none;
   }
 }
+.emoji-phone {
+  display: inline-block;
+  margin-left: 8px;
+  animation: ringPhone 1.0s infinite;
+  transform-origin: center;
+}
+
+@keyframes ringPhone {
+  0%   { transform: rotate(0deg); }
+  20%  { transform: rotate(15deg); }
+  40%  { transform: rotate(-15deg); }
+  60%  { transform: rotate(10deg); }
+  80%  { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+.wave-hand {
+  display: inline-block;
+  animation: wave 1.6s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}

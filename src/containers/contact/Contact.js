@@ -4,6 +4,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
+import phoneAnimation from "../../assets/lottie/RingingPhoneAnimation.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -14,7 +15,19 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <h1
+              className="heading contact-title"
+              style={{display: "flex", alignItems: "center", gap: "8px"}}
+            >
+              {contactInfo.title}
+              <span style={{width: "120px", height: "120px"}}>
+                <DisplayLottie
+                  animationData={phoneAnimation}
+                  height="24px"
+                  width="24px"
+                />
+              </span>
+            </h1>
             <p
               className={
                 isDark

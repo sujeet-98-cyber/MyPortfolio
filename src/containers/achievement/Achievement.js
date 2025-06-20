@@ -1,6 +1,8 @@
 import React, {useContext} from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
+import AchievementsAnimation from "../../assets/lottie/AchievementsAndCertifications.json";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
@@ -21,7 +23,22 @@ export default function Achievement() {
                   : "heading achievement-heading"
               }
             >
-              {achievementSection.title}
+              {achievementSection.title}{" "}
+              <span
+                style={{
+                  width: "120px",
+                  height: "120px",
+                  display: "inline-block",
+                  marginLeft: "8px",
+                  verticalAlign: "middle"
+                }}
+              >
+                <DisplayLottie
+                  animationData={AchievementsAnimation}
+                  height="22px"
+                  width="22px"
+                />
+              </span>
             </h1>
             <p
               className={

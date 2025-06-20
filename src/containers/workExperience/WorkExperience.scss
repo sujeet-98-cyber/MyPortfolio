@@ -35,3 +35,18 @@
     text-align: center;
   }
 }
+.emoji-bag {
+  display: inline-block;
+  margin-left: 8px;
+  animation: openCloseBag 1s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes openCloseBag {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.8) rotateX(10deg);
+  }
+}
